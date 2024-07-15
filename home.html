@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Home - Dev Market Store</title>
+</head>
+
+<body>
+  <header class="section-navbar">
+    <script src="navbar.js"></script>
+  </header>
+
+
+  <main>
+    <section class="section-hero">
+      <div class="container grid grid-two--cols">
+        <div class="section-hero--content">
+          <p class="hero-subheading">Explore the Latest in Dev Market Store</p>
+          <h1 class="hero-heading">
+            Your Final Shop for Cutting-Edge Gadgets!
+          </h1>
+          <p class="hero-para">
+            Welcome to Dev Market Store, your ultimate hub for mobiles, electronics, laptops, and software. Discover the newest tech trends and innovations with us. Shop now and unlock a world of possibilities!
+          </p>
+          <div class="hero-btn">
+            <a href="products.html" class="btn">Explore Our Products</a>
+          </div>
+        </div>
+        <div class="section-hero-image" data-aos="fade-up" data-aos-delay="600">
+          <figure>
+            <img src="./images/hero.png" alt="Image not found!" />
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <section class="section-extra-product">
+    <div class="container grid grid-three--cols">
+
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>Mobiles</p>
+          <h3>Browse Mobiles</h3>
+          <a href="mobiles.html">Show Now</a>
+        </div>
+        <div class="extra-img extra-size">
+          <img src="./images/mobiles.png" alt="Mobiles" />
+        </div>
+      </div>
+
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>Electronics</p>
+          <h3>Browse Electronics</h3>
+          <a href="electronics.html">Show Now</a>
+        </div>
+        <div class="extra-img extra-size">
+          <img src="./images/electronics.png" alt="Electronics" />
+        </div>
+      </div>
+
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>Laptops</p>
+          <h3>Browse Laptops</h3>
+          <a href="laptops.html">Show Now</a>
+        </div>
+        <div class="extra-img extra-size">
+          <img src="./images/laptops.png" alt="Laptops" />
+        </div>
+      </div>
+
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>Beauty</p>
+          <h3>Browse All Beauty</h3>
+          <a href="beauty.html">Show Now</a>
+        </div>
+        <div class="extra-img extra-size">
+          <img src="./images/beauty.png" alt="Beauty" />
+        </div>
+      </div>
+
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>Softwares</p>
+          <h3>Browse Softwares</h3>
+          <a href="softwares.html">Show Now</a>
+        </div>
+        <div class="extra-img extra-size">
+          <img src="./images/softwares.png" alt="Softwares" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section-policy">
+    <script src="policy.js"></script>
+  </section>
+
+
+  <section class="section-products section-products-container sectionProductMargin">
+    <div>
+      <h2 class="section-common--heading">Top Deals on Bestselling Smartphones</h2>
+    </div>
+    <section class="sectionProductMargin">
+      <div id="mobilesContainer" class="productContainer"></div>
+    </section>
+  </section>
+
+  <section class="section-products section-products-container">
+    <div>
+      <h2 class="section-common--heading">Top Offers on Bestselling Electronics</h2>
+    </div>
+    <section class="sectionProductMargin">
+      <div id="electronicsContainer" class="productContainer"></div>
+    </section>
+  </section>
+
+  <section class="section-products section-products-container">
+    <div>
+      <h2 class="section-common--heading">Best Deals on Bestselling Laptops</h2>
+    </div>
+    <section class="sectionProductMargin">
+      <div id="laptopsContainer" class="productContainer"></div>
+    </section>
+  </section>
+
+  <section class="section-products section-products-container">
+    <div>
+      <h2 class="section-common--heading">Best Price on Bestsellers in Beauty</h2>
+    </div>
+    <section class="sectionProductMargin">
+      <div id="beautyContainer" class="productContainer"></div>
+    </section>
+  </section>
+
+  <section class="section-products section-products-container">
+    <div>
+      <h2 class="section-common--heading">Top Deals on Bestselling Software</h2>
+    </div>
+    <section class="sectionProductMargin">
+      <div id="softwaresContainer" class="productContainer"></div>
+    </section>
+  </section>
+
+
+  <template id="productTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information card">
+        <span class="category"></span>
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="" />
+        </div>
+        <h2 class="productName"></h2>
+        <div class="productRating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="productDescription"></p>
+        <div class="productPriceElement">
+          <p class="productPrice"></p>
+        </div>
+        <div class="productQuantityElement">
+          <p class="productProperty">Quantity(Pieces)</p>
+          <div class="stockElement">
+            <button class="cartDecrement">-</button>
+            <p class="productQuantity">1</p>
+            <button class="cartIncrement">+</button>
+          </div>
+        </div>
+        <button class="add-to-cart-button">
+          <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+        </button>
+      </article>
+    </div>
+  </template>
+
+
+  <section class="section-why--choose">
+    <script src="about.js"></script>
+  </section>
+
+
+  <footer class="section-footer">
+    <script src="footer.js"></script>
+  </footer>
+
+  <script type="module" src="home.js"></script>
+  <script type="module" src="token.js"></script>
+</body>
+
+</html>

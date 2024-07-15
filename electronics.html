@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Browse All Electronics - Dev Market Store</title>
+</head>
+
+<body>
+  <header class="section-navbar">
+    <script src="navbar.js"></script>
+  </header>
+
+  <section class="section-products section-products-container sectionProductMargin">
+    <div>
+      <h2 class="section-common--heading">Browse All Electronics</h2>
+    </div>
+    <section class="sectionProductMargin">
+      <div id="browseProductsContainer" class="productContainer"></div>
+    </section>
+  </section>
+
+
+  <template id="productTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information card">
+        <span class="category"></span>
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="" />
+        </div>
+        <h2 class="productName"></h2>
+
+        <div class="productRating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="productDescription"></p>
+
+        <div class="productPriceElement">
+          <p class="productPrice"></p>
+        </div>
+
+        <div class="productQuantityElement">
+          <p class="productProperty">Quantity(Pieces)</p>
+          <div class="stockElement">
+            <button class="cartDecrement">-</button>
+            <p class="productQuantity">1</p>
+            <button class="cartIncrement">+</button>
+          </div>
+        </div>
+
+        <button class="add-to-cart-button">
+          <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+        </button>
+      </article>
+    </div>
+  </template>
+
+
+  <footer class="section-footer">
+    <script src="footer.js"></script>
+  </footer>
+
+  <script type="module" src="browseProducts.js"></script>
+  <script type="module" src="token.js"></script>
+</body>
+
+</html>
